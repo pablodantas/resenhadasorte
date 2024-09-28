@@ -589,8 +589,8 @@ body.Spinning .WheelCircles {
 
 @media (max-width: 420px) {
   .WheelCanvas {
-    width: 305px;
-    height: 305px;
+    width: 350px;
+    height: 350px;
   }
 
   .WheelCircles {
@@ -604,10 +604,8 @@ body.Spinning .WheelCircles {
   }
 
   .WheelBorder {
-    
-    height: 307px;
-    width: 307px;
-    
+    height: 365px;
+    width: 365px;
   }
 
   .WheelResult { 

@@ -85,11 +85,18 @@
         </output>
       </div>
       <div class="Actions ">
-        <button class="SpinButton Punch" id="spinButton">Gire!</button>
+        <button class="SpinButton Punch" id="spinButton" onclick="desabilitarBotao()">Gire!</button>
       </div>
 
     </div>
   </div>
+  <script>
+    function desabilitarBotao() {
+    const spinButton = document.getElementById("spinButton");
+    // Cria um novo botão
+    spinButton.disabled = true; // Desabilita
+    }
+  </script>
   <script src="TweenMax.min.js"></script>
   <script src="bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>

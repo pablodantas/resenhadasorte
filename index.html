@@ -92,8 +92,15 @@
   </div>
   <script>
     function replaceButton() {
+        const wheelResultElement = document.querySelector('.WheelResult');
 
-      // Seleciona o botão que será removido
+        // Captura o valor exibido no elemento
+        const resultValue = wheelResultElement.textContent;  // ou .innerHTML se tiver tags internas
+
+        // Agora "resultValue" contém o valor exibido na class "WheelResult"
+        console.log(resultValue)
+      if(resultValue){
+              // Seleciona o botão que será removido
       const spinButton = document.getElementById("spinButton");
 
       // Cria um novo botão
@@ -104,18 +111,14 @@
       // Adiciona um evento de clique ao novo botão para abrir o link
       resgateButton.onclick = function () {
         // Seleciona o elemento com a classe "WheelResult"
-        const wheelResultElement = document.querySelector('.WheelResult');
-
-        // Captura o valor exibido no elemento
-        const resultValue = wheelResultElement.textContent;  // ou .innerHTML se tiver tags internas
-
-        // Agora "resultValue" contém o valor exibido na class "WheelResult"
-        console.log(resultValue)
+        
 
         const message = `Olá resenha barber shop, gostaria de resgatar meu prêmio ${resultValue} da roleta`;
         const encodedMessage = encodeURIComponent(message); // Codifica a mensagem para a URL
 
         window.open(`https://wa.me/5571986393648?text=${encodedMessage}`, '_blank');
+      }
+
       };
 
       // Remove o botão "Gire!" e substitui pelo botão "Resgate"

@@ -85,48 +85,11 @@
         </output>
       </div>
       <div class="Actions ">
-        <button class="SpinButton Punch" id="spinButton" onclick="replaceButton()">Gire!</button>
+        <button class="SpinButton Punch" id="spinButton">Gire!</button>
       </div>
 
     </div>
   </div>
-  <script>
-    function replaceButton() {
-        const wheelResultElement = document.querySelector('.WheelResult');
-
-        // Captura o valor exibido no elemento
-        const resultValue = wheelResultElement.textContent;  // ou .innerHTML se tiver tags internas
-
-        // Agora "resultValue" contém o valor exibido na class "WheelResult"
-        console.log(resultValue)
-      if(resultValue){
-              // Seleciona o botão que será removido
-      const spinButton = document.getElementById("spinButton");
-
-      // Cria um novo botão
-      const resgateButton = document.createElement("button");
-      resgateButton.innerHTML = "Resgate";
-      resgateButton.className = "ResgateButton";
-
-      // Adiciona um evento de clique ao novo botão para abrir o link
-      resgateButton.onclick = function () {
-        // Seleciona o elemento com a classe "WheelResult"
-        
-
-        const message = `Olá resenha barber shop, gostaria de resgatar meu prêmio ${resultValue} da roleta`;
-        const encodedMessage = encodeURIComponent(message); // Codifica a mensagem para a URL
-
-        window.open(`https://wa.me/5571986393648?text=${encodedMessage}`, '_blank');
-      }
-
-      };
-
-      // Remove o botão "Gire!" e substitui pelo botão "Resgate"
-      const actionsDiv = document.querySelector('.Actions');
-      actionsDiv.removeChild(spinButton);
-      actionsDiv.appendChild(resgateButton);
-    }
-  </script>
   <script src="TweenMax.min.js"></script>
   <script src="bundle.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.browser.min.js"></script>

@@ -40,6 +40,12 @@ a:focus {
   text-decoration: none;
 }
 
+.alert-warning {
+    color: #ffffff;
+    background-color: #5d141845;
+    border-color: #4e0d0a;
+}
+
 .ResgateButton{
   position: relative;
   background: #77201D;

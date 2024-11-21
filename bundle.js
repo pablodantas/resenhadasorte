@@ -2089,7 +2089,7 @@
         let wheelName = wheelNameEl.textContent
 
         // Resturants near Main St. Santa Monica, CA, USA
-        const defaultRestaurants = ['1 Hidratação', '30% off no corte', '20% off no corte', '50% off no corte', '1 Sobrancelha', `50% off na pomada`, '50% off no gel', '1 Sobrancelha']
+        const defaultRestaurants = ['1 Hidratação', '30% off no corte', '20% off no corte', '50% off no corte', '1 Sobrancelha', `50% off pomada`, '50% off no gel', '1 Sobrancelha']
 
         const localStorageKeySegments = 'lunchwheel:segments'
         const localStorageKeyWheelName = 'lunchwheel:name'
